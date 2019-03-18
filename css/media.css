@@ -1,0 +1,175 @@
+@media screen and (max-width: 992px) {
+    .bt-back {
+        width: 15rem;
+        font-size: 2em;
+    }
+    body {
+        font-size: 17px;
+    }
+    .pop-box {
+        padding: 3.3rem;
+        border-radius: 20px;
+        font-size: 3em;
+        width: 50rem;
+    } 
+    .pop-box .pop-bt {
+        width: 17rem;
+    }
+    .prev-box {
+        font-size: 170%;
+    }
+    h2::after {
+        width: 9rem;
+    }
+    .wrap {
+        width: 90%;
+        min-width: 0px;
+    }
+    nav ul li:first-child {
+        display: none;
+    }
+    .mnu-bt {
+        font-size: 6em;
+        text-align: center;
+        padding: 2rem;
+        display: block;
+    }
+    .mnu-bt:hover {
+        color: #fce28a;
+        cursor: pointer;
+    }
+    nav {
+        padding: 0;
+        height: 0; opacity: 0;
+        background: #fce28a;
+        left: 0; top: 0%;
+        width: 100%;
+        position: absolute;
+    }
+    nav ul {
+        height: 100%;
+        width: 100%;
+    }
+    nav ul li {
+        text-align: center;
+        width: 49.89%;
+        float: left;
+        margin: 0 0 .1rem 0;
+        font-size: 3em;
+        border-bottom: 2px solid #fff;
+    }
+    nav ul li:nth-child(2n){
+        border-right: 2px solid #fff;
+    }
+    nav ul li a {
+        padding: 2rem 0;
+    }
+    nav ul li>a:hover {
+        border: none;
+        
+    }
+    nav ul li:first-child
+    
+    .welcome {
+        height: 80vh;
+    }
+    .welcome span {
+        font-size: 5em;
+    }
+    .welcome h1::after{
+        width: 9rem;
+    }
+    .welcome a{
+        width: 19rem;
+        font-size: 2.6em;
+    }
+    /* about */
+
+    .bt {
+        left: 5%;
+        width: 90%;
+        height: 30rem;
+        margin: 0 auto 3rem;
+    }
+    /* STATS */
+    #stats ul li {
+        height: 21rem;
+        width: 19.79%;
+    }
+    .stat-cont {
+        font-size: 1.25em;
+    }
+    /*WORK */
+    #work ul {
+        text-align: center;
+    }
+    #work li{
+        font-size: 2em;
+        text-align: left;
+        position: relative;
+        padding: 0 0 2rem;
+        margin: 0 auto 4rem;
+        float: left;
+        left: 10%;
+        width: 80%;
+    }
+    #work li img {
+        height: 6rem;
+        padding: .8rem 3rem 6rem 0;
+    }
+    #work .line {
+        display: none;
+    }
+    /* SLIDER */
+    #slider-wrap {
+        font-size: 1.5em;
+        text-align: center;
+    }
+    .slide img {
+        display: none;
+    }
+    /* TEAM */
+    .bt-height {
+        margin-bottom: 9rem;
+        height: 70rem !important;
+    }
+    .guy-name {
+        font-size: 2em;
+    }
+    /* CLIENTS */
+
+    #clients .coment {
+        margin: 7rem auto 10rem;
+        width: 90%;
+        display: block;
+    }
+    #clients .coment:nth-child(2n) {
+        margin: auto
+    }
+    #clients img {
+        height: 10rem;
+    }
+    #clients .guy-name {
+        font-size: 80%;
+    }
+    #clients .guy-name::after {
+        width: 10rem;
+    }
+}
+@media screen and (min-width: 993px) {
+
+    nav ul li:first-child {
+        margin: 0;
+        text-transform: none;
+        float: left;
+        font-weight: 700; 
+        font-size: 2em; 
+    } 
+        nav ul li>a:hover{
+        color: #fce38a;
+        border-bottom: 3px solid #fce38a;
+    }
+       .mnu-cls {
+            display: none;
+    }
+}

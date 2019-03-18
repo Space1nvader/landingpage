@@ -1,0 +1,481 @@
+/*my preset*/ 
+html, body{margin: 0;padding: 0;font-size: 15px; cursor: default; color: #fff;} 
+ul{list-style: none; margin: 0; padding: 0;} 
+a{text-decoration: none; display: block;}
+h1, h2, h3, h4 {text-transform: uppercase;}
+
+/* шрифты */ 
+body {
+    font-family: 'Montserrat', sans-serif;
+}
+.curs {
+    text-transform: initial !important; 
+    color: #000;
+    font-size: 1.5em;
+    font-family: 'Kaushan Script', cursive;
+}
+.robo {
+    color: #999999;
+    font-family: 'Roboto', sans-serif; 
+}
+
+/* Заголовки 2го уровня */
+h2 {
+    color: #000;
+    margin: 1.3rem 0;
+    font-size: 1.9em;
+}
+
+/* полоска после заголовков*/
+h2::after{
+    content: '';
+    display: block;
+    margin: 2.4rem auto 3rem;
+    height: .2rem;
+    width: 4rem;
+    background: #f38181;
+}
+
+/* центрирование элемента */
+.flex-box {
+        display: flex;
+        align-items: center;
+        align-content: center;
+        justify-content: center;
+}
+
+/* ширина сайта */
+.wrap {
+    width: 61rem;    
+	min-width: 1100px;
+	margin: 0 auto;  
+}
+
+/* анимация */
+.animate {
+    -webkit-transition: all .2s ease;
+    -moz-transition: all .2s ease;
+    -o-transition: all .2s ease;
+    transition: all .2s ease;
+}
+a{   
+    color: #fff;
+}
+/* НАЗАД В ПОРТФОЛИО */
+.bt-back{
+    border-radius: 5px;
+    text-align: center;
+    border: 2px solid #0065ff;
+    background: rgba(0,0,0, .5);
+    display: block;
+    top: 20rem;
+    left: 3rem;
+    width: 10rem;
+    font-size: .9em;
+    position: fixed;
+    z-index: 1111;
+} 
+.bt-back a{
+    padding: 1rem 0;
+    display: block;
+
+}
+.bt-back:hover {
+     background: #0065ff;
+}
+/* верхний текст для каждого блока */
+.prev-box {
+    overflow: hidden;
+    text-align: center;
+    margin: 5rem 0 2.5rem;
+} 
+/* pop-up */
+.popup {
+    z-index: 9999;
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    background: rgba(0,0,0, .4)
+}
+.pop-box {
+    font-size: 1.1em;
+    border-radius: 6px;
+    padding: 2.8rem;    
+    background-image: linear-gradient(to bottom, #f48b82, #fd9f7d, #ffb57c, #ffcb80, #fce28a);
+    margin: 0 auto;
+    width: 30rem;
+}
+.pop-box .pop-bt{
+    border-radius: 3px;
+    margin: 2rem auto 0;
+    border: 4px solid #fff;
+    padding: .4rem 0;
+    width: 7rem;
+}
+    .pop-box .pop-bt:hover{
+        color: #000;
+        background: #fff;
+        border: 4px solid #fff;
+    }
+
+section {
+    overflow: hidden;
+}
+/* ГЛАВНАЯ */
+#top {
+    background: url(../img/2-layers.jpg) center center /cover;
+}
+/* навигация */
+nav{
+    overflow: hidden;
+    padding-top: 1.8rem;
+}
+    nav ul li{
+        margin-left: 3rem;
+        text-transform: uppercase;
+        float: right;
+    }
+nav ul li a {
+    padding-bottom: .85rem;
+    color: #fff;
+}
+.mnu-bt, .mnu-cls {
+    display: none;
+}
+
+.welcome {
+    height: 89vh;
+    text-align: center;
+}
+.welcome span{
+    color: #fff;
+    font-family: 'Kaushan Script', cursive;
+    font-size: 4em;
+}
+.welcome h1 {
+    margin: 2rem 0;
+    line-height: .9em;
+    font-size: 9em;
+}
+    .welcome h1::after{
+        content: '';
+        display: block;
+        margin: 4.6rem auto 4.1rem;
+        height: .2rem;
+        width: 4rem;
+        background: #fff;
+    }
+.welcome a{
+    border-radius: 3px;
+    margin: 0 auto;
+    border: 4px solid #fff;
+    padding: .8rem 1.5rem;
+    width: 9rem;
+    font-size: 1.1em;
+}
+    .welcome a:hover{
+        color: #000;
+        background: #fff;
+        border: 4px solid #fff;
+    }
+
+/* О НАС */ 
+.about-text {
+    margin: 0 auto 5rem;
+    max-width: 950px;
+    text-align: center;
+}
+.bt-box {
+
+    margin-bottom: 7rem;
+}
+.bt {
+    float: left;
+    position: relative;
+    margin: 0 1.28rem;
+    width: 31%;
+    height: 14rem;
+}
+    .bt:first-child{
+        margin-left: 0;
+    }
+        .bt:last-child{
+            margin-right: 0;
+        }
+/* фильтр для кнопки */
+.hover-box{
+    opacity: 0;
+}
+    .bt a:hover .hover-box {
+        opacity: 1;
+    }
+.bt img {
+    border-radius: 2px;
+    z-index: 1;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+    .bg {
+        position: absolute;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        background-image: linear-gradient(to bottom, #f48b82, #fd9f7d, #ffb57c, #ffcb80, #fce28a);
+        opacity: .8
+    }
+        .bt-cont {
+            text-transform: uppercase;
+            font-size: 1.1em;
+        }
+            .bt-cont img {
+                height: 1.4rem;
+                width: 2rem;
+                margin-bottom: .6rem;
+            }
+/* СТАТИСТИКА */
+#stats {
+    margin-top: 7rem;
+    background: #95e1d3;
+}
+    #stats ul{
+        width: 100%;
+    }
+        #stats ul li{
+            padding: 0;
+            margin: 0;
+            float: left;
+            border-right: 1px solid #b5eae0;    
+            width: 19.89%;
+            height: 16.5rem;
+            text-transform: uppercase;
+            position: relative;
+        }
+            #stats ul li:first-child {
+                border-left: 1px solid #b5eae0;
+            }
+.stat-cont {
+            position: absolute;
+            top: 0;
+            width: 100%;
+            height: 100%;
+            flex-direction: column;
+            font-weight: 700;
+}
+    #stats ul li span {
+        font-size: 4em;
+        padding-bottom: .8rem;
+    }
+
+/* РАБОТА */ 
+#work ul {
+    overflow: hidden;
+}
+    #work ul:last-child{
+        margin-bottom: 8rem;    
+    }
+#work li {
+    font-size: .9em;
+    margin-right: 5.86rem;
+    width: 28%;
+    float: left;
+}
+    #work li:last-child {
+        margin-right: 0;
+    }
+        #work li img{
+            padding:0 2rem 2rem 0;
+            float: left;
+        }
+#work span {
+    margin-bottom: 1.1rem;
+    color: #000;
+    display: block;
+    text-transform: uppercase;
+}
+
+/* разделитель списков */
+.line {
+    margin: 3.2rem 0;
+    height: 1px; 
+    width: 100%;
+    background: #e5e5e5;;
+}
+
+/* БЛОК ДИЗАЙН */
+#design {
+    padding-top: 2rem;
+    margin-bottom: 2rem;
+    overflow: visible;
+    background: url(../img/2-layers%2022.png) center center /cover;
+}
+.img-box {
+    margin-left: -3rem;
+    position: relative;
+    text-align: center;
+}
+.phone{
+    right: 11.7rem;
+    bottom: -6rem;
+    position: absolute;    
+}
+#slider-wrap {
+   line-height: 1.6em;
+   font-style: italic;
+   font-size: 1.6em;
+   background-color: #f8f8f8;
+}
+    .slide img {
+        margin: .67rem 4rem 0 0;
+        float: left;
+        padding: 2.8rem;
+        border: 3px solid #95e1d3;
+    }
+        .slide span{
+            margin-top: 1rem;
+            font-size: 1.3em;
+            display: block;
+        }
+            .slide span::before {
+                content: '';
+                display: inline-block;
+                vertical-align: middle;
+                height: .2rem;
+                width: 4rem;
+                background: #f38181;
+                margin-right: 1rem;
+            }
+.second-box {
+    height: 45%;
+}
+.bt-height {
+    height: 30rem !important;
+}
+.hover-box ul li{
+    -webkit-transition: all .2s ease;
+    -moz-transition: all .2s ease;
+    -o-transition: all .2s ease;
+    transition: all .2s ease;
+    text-align: center;
+    background: #fce38a;
+    border-right: 1px solid #f38181;
+    width: 3rem;
+    float: left;
+}
+    .hover-box ul li:last-child{
+        border-right: none;
+    }
+
+        .hover-box ul li:hover {
+            background: #95e1d3;
+        }
+.hover-box ul li img {
+    margin: 0;
+    vertical-align: bottom;
+    padding: .8rem 0;
+    height: 1.5rem;    
+    width: auto;
+}
+.guy-name {
+    color: #000;
+    font-size: .95em;
+    display: block;
+    text-align: center;
+    margin-top: 1rem;
+}
+    .guy-name .name {
+        font-family: 'Montserrat', sans-serif !important;
+        font-weight: 700;
+        margin: 1.6rem 0 .3rem;
+        display: block;
+        text-transform: uppercase;
+    }
+        .guy-name .profy {
+            font-style: italic;
+        }
+/* CLIENTS */
+
+#clients {
+    padding-bottom: 7rem;
+    background: url(../img/2-layers%2033.png) center center /cover;
+}
+    #clients .coment {
+        overflow: visible;
+        width: 45%;
+        display: inline-block;
+    }
+        #clients .coment:nth-child(2n) {
+            margin-bottom: 5rem;
+            margin-left: 9.64%
+        }
+            #clients img {
+                padding: 0 2rem 2rem 0;
+                float: left;
+            }
+                #clients .name {
+                    margin: 0 0 1rem;
+                }
+                    #clients .guy-name {
+                        margin: 0;
+                        padding: 0;
+                        overflow: hidden;
+                        text-align: left;
+                    }
+                        #clients .guy-name::after{
+                                content: '';
+                                display: block;
+                                margin: 1rem 0;
+                                height: .2rem;
+                                width: 4rem;
+                                background: #f38181;
+                        }
+                            #clients .robo {
+                                overflow: hidden;
+                            }
+
+/* NEWS */
+
+#news {
+    margin-bottom: 6rem;
+}
+#news .news-block {
+    padding: 1rem;
+    font-size: .8em;
+}
+
+/* MAP */
+
+#map {
+    margin-bottom: 3rem;
+    position: relative;
+}
+    #map:hover .map-mask {
+        height: 0%;
+        opacity: 0;
+    }
+.map-mask {
+    z-index: 999;
+    width: 100%;
+    height: 100%;
+    opacity: 1;
+    background: rgba(135, 135, 135, 0.72);
+    position: absolute;
+}
+    .map-mask h3{
+        font-size: 2em;
+        color: #f38181;;
+
+    }
+        .map-mask h3::after{
+            content: '';
+            display: block;
+            margin: 1rem auto 0;
+            height: .2rem;
+            width: 5rem;
+            background: #f38181;
+        }
+.copy {
+    margin-bottom: 3rem;
+    text-align: center;
+}
